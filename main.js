@@ -1,4 +1,5 @@
-$(document).ready(() => { //$ --> taking to jquery
+$(function() { //$ --> taking to jquery
+  console.log("working");
     // all of our js goes here
     // $( "main" ).click(function() {
     //      $( "main" ).toggleClass( "black-background" );
@@ -29,8 +30,15 @@ $("h2").hover(function() {
 
 // If someone types a letter whilst viewing the webpage a new paragraph should be created and that letter should be added to it.
 
-$("body").keydown(function(){
-    $( "h3" ).html("not sure yet how to link this to keys");
+$("body").keydown(function(e){
+    var code = e.keyCode;
+    var letter = String.fromCharCode(code);
+    $("#section_3").append(`<h3 id="${letter}"></h3>`);
+    console.log(String.fromCharCode(code));
+    $(`#${letter}`).html(`${letter}`);
+
+    });
+    // $( "h3" ).html("not sure yet how to link this to keys");
   });
 
 
@@ -49,8 +57,4 @@ $( "#button_2" ).click(function() {
 $( "#button_3" ).click(function() {
     $( "#section_3" ).toggleClass( "section_change" );
     
-});
-
-
-
 });

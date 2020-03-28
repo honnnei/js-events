@@ -11,6 +11,7 @@
 - changing things on the event of click or mouseenter or hover
 ### What challenges I/we overcame
 - using .keydown
+- creating a new paragraph for every key typed :)
 ### What I/we struggled with
 we did not have enough time to figoure out how to CREATE new paragraphs after keyboard typing.
 ### What I/we would do differently next time
