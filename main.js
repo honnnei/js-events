@@ -35,7 +35,7 @@ $("body").keydown(function(e){
     var letter = String.fromCharCode(code);
     $("#section_4").append(`<div class="letters"><h3 class="${letter}"></h3></div>`);
     console.log(String.fromCharCode(code));
-    $(`.${letter}`).html(`${letter}`);
+    $(`.${letter}`).html(`${letter}LOL`);
 
     });
     
