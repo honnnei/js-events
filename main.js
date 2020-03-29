@@ -33,13 +33,28 @@ $("h2").hover(function() {
 $("body").keydown(function(e){
     var code = e.keyCode;
     var letter = String.fromCharCode(code);
-    $("#section_3").append(`<h3 id="${letter}"></h3>`);
+    $("#section_4").append(`<div class="letters"><h3 class="${letter}"></h3></div>`);
     console.log(String.fromCharCode(code));
-    $(`#${letter}`).html(`${letter}`);
+    $(`.${letter}`).html(`${letter}`);
 
     });
-    // $( "h3" ).html("not sure yet how to link this to keys");
-  });
+    
+
+
+
+// $("body").keydown(function(e){
+//   var code = e.keyCode;
+//   var letter = String.fromCharCode(code);
+//   var number = 0;
+//   $("#section_4").append(`<div><h3 class="${(number += 1)}"></h3></div>`, function() {
+//     $(this).html(`${letter}`);
+//   });
+//   // console.log(String.fromCharCode(code));
+//   // $(`#${letter}`).html(`${letter}`);
+
+//   });
+  // $( "h3" ).html("not sure yet how to link this to keys");
+
 
 
 
@@ -57,4 +72,6 @@ $( "#button_2" ).click(function() {
 $( "#button_3" ).click(function() {
     $( "#section_3" ).toggleClass( "section_change" );
     
+});
+
 });
